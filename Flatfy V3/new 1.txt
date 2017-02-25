@@ -1,0 +1,40 @@
+
+		INÍCIO
+			REAL n1, n2, n3, media;
+			LEIA (n1);
+			LEIA (n2);
+			LEIA (n3);
+			media ← (n1 + n2 + n3)/3;
+			SE (media >= 6) 
+				ENTAO
+					INÍCIO
+						ESCREVA("Media = ", media);
+						ESCREVA("APROVADO!");
+					FIM
+				SENÃO
+					INÍCIO
+						ESCREVA("Media = ", media);
+						ESCREVA("REPROVADO!");
+					FIM
+		FIM
+		
+		PARA J <- valor inicial ATÉ valor final FAÇA
+			INÍCIO
+				comando1;
+				comando2;
+			FIM
+		
+		
+		
+		REPITA
+			comandos;
+		ATÉ condição
+		
+		x <- 1;
+		y <- 5;
+		REPITA
+			x <- x + 2;
+			y <- y + 1;
+		ATÉ x >= y
+		
+		
