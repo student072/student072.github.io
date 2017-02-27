@@ -94,7 +94,7 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
-					<li class="menuItem"><a href="#whatis">Home</a></li>
+					<li class="menuItem"><a href="index.html">Home</a></li>
 					<li class="menuItem"><a href="#useit">Aulas</a></li>
 					<li class="menuItem"><a href="#credits">Créditos</a></li>
 					<li class="menuItem"><a href="#contact">Contato</a></li>
@@ -109,8 +109,8 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
 				<h2>Ponteiros</h2>
-				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar conceitos básicos de computação
-				para que o aluno possa ter uma base para aprender Algoritmos e Estruturas de Dados.</p>
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar o conteúdo relacionado a ponteiros. Será feita
+				uma abordagem focando na linguagem C.</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1  wrap_title">
 				<div class="row">
@@ -146,7 +146,7 @@
 					<p>Criamos um inteiro count com o valor 10 e um apontador para um inteiro pt. A expressão &count nos dá o endereço de count, o qual armazenamos em pt. Simples, não é? Repare que não alteramos o valor de count, que continua valendo 10.</p>
 					<p>Como nós colocamos um endereço em pt, ele está agora "liberado" para ser usado. Podemos, por exemplo, alterar o valor de count usando pt. Para tanto vamos usar o operador "inverso" do operador &. É o operador *.</p>
 					<p>O operador * possui 2 utilizações distintas no uso de ponteiros.</p>
-					<p>Se utilizado na declaração de uma variável, indica que a mesma é um ponteiro, durante a implementação do programa seu uso é referente a manipulação do conteúdo, valor de variável.</p>
+					<p>Se utilizado na declaração de uma variável, indica que a mesma é um ponteiro, durante a implementação do programa seu uso é referente a manipulação do conteúdo  da variável.</p>
 					<p>O operador & é utilizado para a manipulação do endereço de memória</p>
 					<p>No exemplo acima, uma vez que fizemos pt=&count a expressão *pt é equivalente ao próprio count (conteúdo da variável). Isto significa que, se quisermos mudar o valor de count para 12, basta fazer *pt=12.</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem5.PNG" alt="" align="middle"><center></div>
@@ -182,6 +182,13 @@
 					
 					
 				</div>
+				<center>
+					<video width=80% height="315" class="img-responsive" controls>
+					  <source src="video/ponteiros1.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				</center>
 				<div class="row">
 					<h3>Ponteiros para vetores</h3>
 					<p>Ponteiros oferecem um eficiente e prático meio de acesso e manipulação dos elementos de um vetor. Sejam, por exemplo, um vetor e um ponteiro:</p>
@@ -190,7 +197,7 @@
 					<p>E a figura abaixo dá uma ideia gráfica da operação.</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem15.PNG" alt="" align="middle"><center></div>
 					<p>Obs: o valor 4052 é meramente ilustrativo. Depende da localização de memória onde o programa é carregado. </p>
-					<p>Uma vez apontado para o primeiro elemento do vetor, o valor deste último pode ser acessado ou modificado via ponteiro de forma idêntica à já vista para variáveis simples. As linhas abaixo, por exemplo, atribuem o valor de ar[0] a newVar (1ª linha) e o modificam para 15 (2ª linha).</p>
+					<p>Uma vez apontado para o primeiro elemento do vetor, o valor deste último pode ser acessado ou modificado via ponteiro de forma idêntica à já vista para variáveis simples.</p>
 					<p>É fácil concluir que os demais elementos do vetor podem ser acessados via incremento ou decremento do ponteiro, uma vez que ele contém endereço.</p>
 					<p>Considera-se, agora, que ptr é incrementado conforme abaixo</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem16.PNG" alt="" align="middle"><center></div>
@@ -203,7 +210,6 @@
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem17.PNG" alt="" align="middle"><center></div>
 					<p>Mas também poderia ter sido feita da seguinte forma tendo o mesmo efeito:</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem18.PNG" alt="" align="middle"><center></div>
-					<p>Exemplos</p>
 				</div>
 				<div class="row">
 					<h3>Ponteiros para matriz</h3>
@@ -238,27 +244,53 @@
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem23.PNG" alt="" align="middle"><center></div>
 					<p>Esse exemplo funcionará exatamente como esperado: primeiramente ele imprimirá "5 10" e depois ele imprimirá "10 5". Mas e se quisermos trocar várias vezes o valor de duas variáveis? É muito mais conveniente criar uma função que faça isso. Vamos fazer uma tentativa de implementação da função swap (troca, em inglês):</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem24.PNG" alt="" align="middle"><center></div>
-					<p>No entanto, o que queremos não irá acontecer. Você verá que o programa imprime duas vezes "5 10". Por que isso acontece? Lembre-se do escopo das variáveis: as variáveis a e b são locais à função main(), e quando as passamos como argumentos para swap(), seus valores são copiados e passam a ser chamados de i e j; a troca ocorre entre i e j, de modo que quando voltamos à função main() nada mudou.</p>
+					<p>No entanto, o que queremos não irá acontecer. Você verá que o programa imprime duas vezes "5 10". Por que isso acontece? Lembre-se do escopo das variáveis: as variáveis a e b são locais à função main( ), e quando as passamos como argumentos para swap(), seus valores são copiados e passam a ser chamados de i e j; a troca ocorre entre i e j, de modo que quando voltamos à função main() nada mudou.</p>
 					<p>Então como poderíamos fazer isso? Como são retornados dois valores, não podemos usar o valor de retorno de uma função. Mas existe uma alternativa: os ponteiros!</p>
 					<div class="row"><center><img class="img-responsive " src="img/pon/imagem25.PNG" alt="" align="middle"><center></div>
-					<p>Neste exemplo, definimos a função swap() como uma função que toma como argumentos dois ponteiros para inteiros; a função faz a troca entre os valores apontados pelos ponteiros. Já na função main(), passamos os endereços das variáveis para a função swap(), de modo que a função swap() possa modificar variáveis locais de outra função. O único possível inconveniente é que, quando usarmos a função, 
+					<p>Neste exemplo, definimos a função swap( ) como uma função que toma como argumentos dois ponteiros para inteiros; a função faz a troca entre os valores apontados pelos ponteiros. Já na função main( ), passamos os endereços das variáveis para a função swap(), de modo que a função swap( ) possa modificar variáveis locais de outra função. O único possível inconveniente é que, quando usarmos a função, 
 						teremos de lembrar de colocar um & na frente das variáveis que estivermos passando para a função.</p>
-					<p>Se você pensar bem, já vimos uma função em que passamos os argumentos precedidos de &: é a função scanf()! Por que fazemos isso? É simples: chamamos a função scanf() para que ela ponha nas nossas variáveis valores digitados pelo usuário. Ora, essas variáveis são locais, e portanto só podem ser alteradas por outras funções através de ponteiros!</p>
+					<p>Se você pensar bem, já vimos uma função em que passamos os argumentos precedidos de &: é a função scanf( )! Por que fazemos isso? É simples: chamamos a função scanf( ) para que ela ponha nas nossas variáveis valores digitados pelo usuário. Ora, essas variáveis são locais, e portanto só podem ser alteradas por outras funções através de ponteiros!</p>
 					<p>Quando uma função recebe como parâmetros os endereços e não os valores das variáveis, dizemos que estamos a fazer uma chamada por referência; é o caso desse último exemplo. Quando passamos diretamente os valores das variáveis para uma função, dizemos que é uma chamada por valor; foi o caso do segundo exemplo. </p>
 				</div>
-				<div class="row">
-						<div class="video-container"><iframe "853" height="480" src="https://www.youtube.com/embed/n6mnuI1F_Ws" frameborder="0" allowfullscreen></iframe></div>
-				</div>
+				<center>
+				<h3>Video</h3>
+					<video width=80% height="315" class="img-responsive" controls>
+					  <source src="video/ponteiros2.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				</center>
 				
-			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
-				<h3>Vídeos</h3>
-			</div>
+			
 			
 					
 			<!-- /.col-lg-4 -->
 			
 			</div>
 				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="exercicios/lista01.pdf">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Ponteiros</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
 		</div>
 	</div>
 	

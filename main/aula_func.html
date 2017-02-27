@@ -115,7 +115,7 @@
 			<div class="col-md-10 col-md-offset-1  wrap_title">
 				<div class="row">
 					<div class="row">
-						<p align="justify">Para a melhor estruturação de programas é comum utilizar-se do conceito de MODULARIZAÇÃO.</p>
+						<p align="justify">Para a melhor estruturação de programas é comum utilizar-se do conceito de <b>MODULARIZAÇÃO</b>.</p>
 						<p align="justify">Modularizar um programa consiste em dividi-lo em partes que serão desenvolvidas em separado. Essas partes executam tarefas menores que depois serão acopladas para formar o programa. A cada uma dessas partes chamamos de subprograma.</p>
 						<p align="justify">Os subprogramas permitem uma melhor legibilidade e manutenibilidade do programa.
 						</p>
@@ -161,6 +161,9 @@
 						<p>Note que o valor dos argumentos é copiado para a função, de maneira que as variáveis originais ficam inalteradas mesmo que na função tentemos alterá-las. A isso chamamos passagem de argumentos por valor (ao contrário de por referência). Veremos como modificar as variáveis originais na seção Ponteiros.</p>
 						<p>A própria chamada de função também é uma expressão cujo valor é o valor de retorno da função, bastando colocá-la no lado direito de um sinal de igual para guardar o valor numa variável. Por exemplo, se a função "quadrado" retorna o quadrado de um número inteiro, podemos fazer assim para calcular o quadrado de 11 na variável x:</p>
 						<div class="row"><center><img class="img-responsive " src="img/fun/imagem15.PNG" alt="" align="middle"><center></div>
+						<h5>Protótipo de uma função</h5>
+						<p>Para definir uma função depois da função main é necessário se fazer o protótipo dessa função. Esse deve ser feito antes da função main. O protótipo nada mais é que definirmos o tipo de retorno, o nome da função e seus atributos, porém ao invés de colocarnos as chaves e os comandos do bloco, colocamos apenas ponto e vírgula.  Vejamos um exemplo:</p>
+						<div class="row"><center><img class="img-responsive " src="img/fun/imagem18.PNG" alt="" align="middle"><center></div>
 					</div>
 					<div class="row">
 					<h3>Exemplos</h3>
@@ -192,16 +195,15 @@
 					<p>Observe que:</p>
 					<p>É passado para a função int verifPar(int k) uma variável (k) do tipo inteiro com o valor que veio da função principal main (valor de num).</p>
 					<p>A função recebe esta variável, verifica se ela é par ou não e devolve ao programa principal o número 1 se k for par e o número zero se k for ímpar.</p>
-					<p>O void serve para indicar que a função não tem parâmetro de saída</p>
 					<p>A função utiliza o comando return para devolver o valor. O tipo do valor devolvido é que define o tipo da função. Portanto a função int verifPar(int k) é então uma função do tipo inteiro, porque o valor devolvido é inteiro.</p>
 				</div>
 				<div class="row">
 					<h3>Conceitos Importantes</h3>
 					<h4>Variáveis locais</h4>
-					<p>São variáveis declaradas dentro de um subprograma. Elas só podem ser manipuladas dentro do subprograma que as declarou. Logo, elas não são visíveis em nenhuma outra parte do programa.</p>
+					<p>São variáveis declaradas dentro de um subprograma. Elas só podem ser manipuladas dentro do subprograma que as declarou. Logo, elas não são visíveis em nenhuma outra parte do programa. Vejamos:</p>
 					<div class="row"><center><img class="img-responsive " src="img/fun/imagem8.PNG" alt="" align="middle"><center></div>
 					<p>Observe que o valor da variável "a" foi alterado em mudaA(), mas esta alteração não foi repassada para o main.</p>
-					<p>Na realidade a variável "a" da função mudaA() NÃO é igual a variável "a" do main. O programa trabalha com as duas variáveis independentemente. </p>
+					<p>Na realidade a variável "a" da função mudaA( ) NÃO é igual a variável "a" do main. O programa trabalha com as duas variáveis independentemente. </p>
 					<p>Com a variável local, duas funções diferentes, por exemplo f1 e f2 podem ter o mesmo nome de variável, para armazenar dados diferentes, pois
 					neste caso quando a função f1 está sendo executada o valor da variável fica “oculto” em f2 e vice-versa.</p>
 					<h4>Variáveis globais</h4>
@@ -210,7 +212,7 @@
 					<p>Deve-se tomar cuidado, pois ao se definir uma variável global, ela não poderá ser redeclarada em outra função do programa, porque isto acarreta em um erro de compilação</p>
 					<div class="row"><center><img class="img-responsive " src="img/fun/imagem9.PNG" alt="" align="middle"><center></div>
 					<p>Observe que a variável "a" foi declarada no corpo do programa principal e não dentro da função mudaA, como no exemplo anterior, portanto ela é uma variável global.</p>
-					<p>O valor da variável a foi alterado em mudaA() e esta alteração foi passada para a variável a do main(). </p>
+					<p>O valor da variável a foi alterado em mudaA( ) e esta alteração foi passada para a variável a do main( ). </p>
 					
 				</div>
 				<div class="row">
@@ -226,16 +228,16 @@
 					<div class="row"><center><img class="img-responsive " src="img/fun/imagem12.PNG" alt="" align="middle"><center></div>
 					<p>Note que não é sempre necessário passar o valor de retorno de uma função para uma variável, podemos imprimir esse valor simplesmente chamando a função dentro do comando PRINTF como no exemplo acima.</p>
 				</div>
+				<center>
+				<h3>Video</h3>
+					<video width=80% height="315" class="img-responsive" controls>
+					  <source src="video/funcao.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				</center>
 				</div>
-				
-				
-				
-				
-			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
-				<h3>Vídeos</h3>
-			</div>
-			
-					
+						
 			<!-- /.col-lg-4 -->
 			
 			</div>

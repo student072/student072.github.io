@@ -94,7 +94,7 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
-					<li class="menuItem"><a href="#whatis">Home</a></li>
+					<li class="menuItem"><a href="index.html">Home</a></li>
 					<li class="menuItem"><a href="#useit">Aulas</a></li>
 					<li class="menuItem"><a href="#credits">Créditos</a></li>
 					<li class="menuItem"><a href="#contact">Contato</a></li>
@@ -109,14 +109,14 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
 				<h2>Recursividade</h2>
-				<p class="lead" style="margin-top:0">O objetivo dessa unidade é introduzir o aluno a estrutura condicional. Será feita
-				uma abordagem focando na linguagem C e também em alguns algoritmos para ajudar na compreensão</p>
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar o conceito de Recursividade. Será feita
+				uma abordagem focando na linguagem C.</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1  wrap_title">
 					<div class="row">
 					<h3>Recursividade</h3>
-						<p>A recursão pode ser vista por muitos como um bicho de sete cabeça, porem muitas vezes a recursividade pode ser a melhor maneira de resolver um determinado problema, também pode ser a forma mais legível e simples do que a forma interativa.
-								Então vamos tentar entender como funciona a recursão</p>
+						<p>A recursividade pode ser vista por muitos como um bicho de sete cabeça, porém muitas vezes pode ser a melhor maneira de resolver um determinado problema, também pode ser a forma mais legível e simples do que a forma interativa.
+								Então vamos tentar entender como funciona a recursão:</p>
 					</div>
 					<div class="row">
 						<h4>Definição e Comparação</h4>
@@ -132,10 +132,10 @@
 						<div class="row"><center><img class="img-responsive " src="img/rec/05.jpg" alt="" align="middle"><center></div>
 						<p>Começamos com uma boneca grande, e vimos bonecas cada vez menores, até encontrar uma tão pequena que não podia conter nenhuma outra.</p>
 						<p>O que as bonecas russas têm a ver com Recursividade? Já vamos descobrir.</p>
-						<p>Chamamos de recursividade ou recursão quando uma função chama a si mesma.</p>
+						<p>Chamamos de <b>recursividade</b> ou <b>recursão</b> quando uma função chama a si mesma.</p>
 						<p>Toda função recursiva é composta por duas partes:</p>
-						<p>Caso base: é o caso mais simples. É usada uma condição em que se resolve o problema com facilidade.</p>
-						<p>Chamadas recursivas: procuram simplificar o problema de tal forma que convergem para o caso base.</p>
+						<p><b>Caso base:</b> é o caso mais simples. É usada uma condição em que se resolve o problema com facilidade.</p>
+						<p><b>Chamadas recursivas:</b> procuram simplificar o problema de tal forma que convergem para o caso base.</p>
 						<p>Descobriu?</p>
 						<p>Assim como uma boneca russa tem dentro de si uma boneca menor, que tem dentro de si uma boneca ainda menor, até chegarmos a uma boneca pequena demais para ter outra dentro de si, a recursividade soluciona um problema dividindo-o em 
 						instâncias menores (chamadas recursivas) até chegar ao ponto em que não conseguimos mais dividir esse problema (caso base).</p>
@@ -203,12 +203,13 @@ int main(){
 	return 0;
 }
 </pre>
-						<p>Perceba que na solução acima dividimos o nosso problema em instâncias menores do problema. Nos temos o caso base que é quando o número n for menor ou igual a 1, para isse caso retornamos o valor 1 e a função encerrada sem necessidade de chamadas recursivas. Caso o número seja maior que 1 temos as chamadas recursivas até cair no caso base
+						<p>Perceba que na solução acima dividimos o nosso problema em instâncias menores do problema. Nos temos o caso base que é quando o número n for igual a 0, para isse caso retornamos o valor 1 e a função encerrada sem necessidade de chamadas recursivas. Caso o número seja maior que 0 temos as chamadas recursivas até cair no caso base
 						que é resolvido e assim, as chamadas retornam valores de forma a solucionar o cálculo.</p>
+						<p>Vejamos o raciocionio:</p>  
 						<ul style="list-style-type:circle">
-							<li>1-	Identifico o caso base: o fatorial de 0 igual a 1, então para este caso retornamos 1.</li>
-							<li>2-	Para encontrar a maneira correta de se retornar o resultado de uma ou mais chamadas recursivas vamos pensar: o fatorial de um número n consiste em por exemplo: fatorial de 1 = 1 * 1, 2 = 1 * 2, de 3 = 1 * 2 * 3, de 4 = 1 * 2 * 3 * 4..., então alteraremos o n a cada chamada para que este chegue até o valor base. Então fazemos: return n * fatorial (n - 1).</li>
-							<li>3-	Também é necessário impedir que n seja < 0, portanto foi adicionado um if para não aceitar essa condição. </li>
+							<li><b>1-</b>	Identifico o caso base: o fatorial de 0 igual a 1, então para este caso retornamos 1.</li>
+							<li><b>2-	</b> Para encontrar a maneira correta de se retornar o resultado de uma ou mais chamadas recursivas vamos pensar: o fatorial de um número n consiste em por exemplo: fatorial de 1 = 1 * 1, 2 = 1 * 2, de 3 = 1 * 2 * 3, de 4 = 1 * 2 * 3 * 4..., então alteraremos o n a cada chamada para que este chegue até o valor base. Então fazemos: return n * fatorial (n - 1).</li>
+							<li><b>3-	</b> Também é necessário impedir que n seja < 0, portanto foi adicionado um if para não aceitar essa condição. </li>
 						</ul>
 						
 						<p>Veja a figura a seguir que representa as chamadas recursivas para o cálculo de 4!</p>
@@ -220,8 +221,6 @@ int main(){
 #include < stdio.h >
 /*Função recursiva*/
 int pot(int base, int expoente){
-	if (base == 1)
-		return base;
 	/*caso base*/
 	if(expoente == 0)
 		return 1;
@@ -244,22 +243,27 @@ int main(){
 	return 0;
 }
 </pre>
-						<p>Podemos observar mais uma vez um problema que pode ser subdivido em subproblemas menores. Temos o caso base que é quando o expoente for igual a 1 e também as chamadas recursivas que fazem 
-						com que o expoente vá diminuindo a medida em que são feitas as chamas de função.</p>
+						<p>Podemos observar mais uma vez um problema que pode ser subdivido em subproblemas menores. Temos o caso base que é quando o expoente for igual a 0 e também as chamadas recursivas que fazem 
+						com que o expoente vá diminuindo a medida em que são feitas as chamas de função, até chegar ao caso base.</p>
 						<p>A lógica é bem simples, porém requer atenção:</p>
 						<ul style="list-style-type:circle">
-							<li>1- Identifico o caso base: todo número elevado a 1 é igual a ele mesmo, então para este caso retornamos a própria base.</li>
-							<li>2-	Para encontrar a maneira correta de se retornar o resultado de uma ou mais chamadas recursivas vamos pensar: se a potência de um número n elevado x é igual a n * n *n.… x vezes, 
-							então não precisaremos modificar a base. Ora então alteraremos o expoente a cada chamada, para que este chegue até o valor do expoente base. Então fazemos: return base*(base, expoente-1)</li>
-							<li>3-	Nesse exemplo, no entanto é necessário observar que todo número elevado a zero é igual a ele mesmo. Então precisamos colocar essa condição também para evitar resultados errados.  
-							Aqui consideramos também potências com base < 1 e expoente < 0 inválidas, portanto foi adicionado um if para não aceitar essas condições. </li>
-							<p>Na figura abaixo temos a representação das chamadas de função para 4 elevado a 3.</p>
-					</ul>
+							<li><b>1- </b> Identifico o caso base: todo número elevado a 0 é igual a 1, então para este caso retornamos 1.</li>
+							<li><b>2- </b> Para encontrar a maneira correta de se retornar o resultado de uma ou mais chamadas recursivas vamos pensar: se a potência de um número n elevado x é igual a n * n *n.… x vezes, 
+							então não precisaremos modificar a base. Ora então alteraremos o expoente a cada chamada, para que este chegue até o valor do expoente base. Então fazemos: return base*(base, expoente-1).</li>
+					  </ul>
+					  <p>Na figura abaixo temos a representação das chamadas de função para 4 elevado a 3.</p>
 						<div class="row"><center><img class="img-responsive " src="img/rec/pot.PNG" alt="" align="middle"><center></div>
 					</div>
 					<div class="row">
-						<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/sAIX06wanFc" frameborder="0" allowfullscreen></iframe></div>
-					</div>
+					<center>
+					<h3>Vídeo</h3>
+					<video width=80% height="315" class="img-responsive" controls>
+					  <source src="video/recursividade.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+					</center>
+				</div>
 				
 					
 			
@@ -268,6 +272,29 @@ int main(){
 			
 			</div>
 				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="exercicios/lista01.pdf">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Recursividade</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
 		</div>
 	</div>
 	
