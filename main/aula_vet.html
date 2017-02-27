@@ -94,7 +94,7 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
-					<li class="menuItem"><a href="#whatis">Home</a></li>
+					<li class="menuItem"><a href="index.html">Home</a></li>
 					<li class="menuItem"><a href="#useit">Aulas</a></li>
 					<li class="menuItem"><a href="#credits">Créditos</a></li>
 					<li class="menuItem"><a href="#contact">Contato</a></li>
@@ -109,7 +109,7 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
 				<h2>Vetores</h2>
-				<p class="lead" style="margin-top:0">O objetivo dessa unidade é introduzir o aluno a estrutura condicional. Será feita
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar ao aluno aos Vetores. Será feita
 				uma abordagem focando na linguagem C e também em alguns algoritmos para ajudar na compreensão</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1  wrap_title">
@@ -128,13 +128,14 @@
 						<ul style="list-style-type:circle">
 							<li><b>tipo</b> é o tipo de dado que será armazenado no vetor;</li>
 							<li><b>tamanho</b> é quantidade de variáveis que vão compor o vetor;</li>
-							<li><b>nome</b> é o nome da variável do tipo vetor)</li>
+							<li><b>nome</b> é o nome da variável do tipo vetor</li>
 						</ul>
 						<p>Dessa forma temos, por exemplo:</p>
 						<h5>Declaração em pseudocódigo</h5>
 						<div class="row"><center><img class="img-responsive " src="img/vet/exemplo1.PNG" alt="" align="middle"><center></div>
 						<h5>Declaração em C</h5>
 						<div class="row"><center><img class="img-responsive " src="img/vet/exemplo2.PNG" alt="" align="middle"><center></div>
+						<p>Ema ambos os casos declaramos um vetor de números inteiros de 10 posições (k) , um vetor de números reais de 5 posições (vet) e um vetor de caracteres de 20 posições (nome). </p>
 						<p>Na declaração de um vetor podemos omitir seu tamanho , desde que quando seja feita a declaração, já sejam atribuídos seus valores, como no exemplo abaixo:</p>
 						<div class="row"><center><img class="img-responsive " src="img/vet/exemplo3.PNG" alt="" align="middle"><center></div>
 						<p>Neste caso automaticamente o índice 4 é atribuido ao vetor num.</p>
@@ -166,7 +167,7 @@
 					</div>
 					<div class="row">
 						<h4>Carregando um vetor</h4>
-						<p>Para carregar um vetor ou parte dele com valores, ou seja, preenche-lo com valores digitados, procedemos da seguinte maneira:
+						<p>Para carregar um vetor ou parte dele com valores, ou seja, preenchê-lo com valores digitados, procedemos da seguinte maneira:
 						<h5>Em pseudocódigo</h5>
 						<p>Utilizamos a estrutura de repetição PARA, com isso será o vetor será percorrido e a cada iteração o comando LEIA solicitará a entrada do dado via teclado.</p>
 						<div class="row"><center><img class="img-responsive " src="img/vet/carregar1.PNG" alt="" align="middle"><center></div>
@@ -227,10 +228,10 @@
 				</div>
 				<div class="row">
 					<h3>Strings</h3>
-					<p>Imagine-se na seguinte situação: você precisa escrever um programa que imprima “ Linguagem C ” na tela. Se pensarmos rapidamente seria necessário poderíamos resolver declarando 11 variáveis char e preenchendo-as uma por uma.  </p>
+					<p>Imagine-se na seguinte situação: você precisa escrever um programa que imprima “Linguagem C” na tela. Se pensarmos rapidamente poderíamos resolver declarando 11 variáveis char e preenchendo-as uma por uma.  </p>
 					<p>Obviamente essa alternativa seria inviável, pois daria muito trabalho. Imagine então escrever textos longos dessa maneira.</p>
 					<p>Para contornar isso, o C utiliza Strings. String é um vetor de caracteres com um delimitador que indica o final da string: o caractere nulo \0. </p>
-					<p>As Strings possuem mais detalhes e opções em relação aos outros tipos de vetores, por isso é necessário trata-las separadamente.</p>
+					<p>As Strings possuem mais detalhes e opções em relação aos outros tipos de vetores, por isso é necessário tratá-las separadamente.</p>
 					<p></p>
 					<h4>Declaração de uma String</h4>
 					<p>Para declarar string em C, não há segredo, pois é a mesma coisa de declarar um vetor de variáveis do tipo char. A sintaxe é sempre a seguinte:</p>
@@ -253,14 +254,15 @@
 					<p>Não é necessário utilizar o &.</p>
 					<p>O problema dessa sintaxe é que a função scanf pegará os caracteres até encontrar um espaço em branco, caractere new line \n, tab ou ENTER.</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str7.PNG" alt="" align="middle"><center></div>
-					<p>Então, vamos dizer para scanf() parar de pegar nossa string somente quando encontrar um caractere de NEW LINE (um enter). Para isso, usamos o operador: [^\n]</p>
-					<p>Logo, nosso código da scanf() para ler strings com espaços e armazenar na variável "str" é:</p>
+					<p>Então, vamos dizer para scanf( ) parar de pegar nossa string somente quando encontrar um caractere de NEW LINE (um enter). Para isso, usamos o operador: [^\n]</p>
+					<p>Logo, nosso código da scanf( ) para ler strings com espaços e armazenar na variável "str" é:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str8.PNG" alt="" align="middle"><center></div>
 					<p>Então podemos corrigir fazendo:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str7a.PNG" alt="" align="middle"><center></div>
-					<p>Podemos ainda limitar o tamanho de nossa string, basta colocar um número inteiro ao lado do %, representando o número de caracteres máximo, o que é uma excelente prática, pois essa função pode ocasionar problemas na memória, caso você estoure os limites da string.</p>
+					<p>Podemos ainda limitar o tamanho de nossa string, basta colocar um número inteiro ao lado do %, representando o número máximo de caracteres que serão contados na leitura, o que é uma excelente prática, pois essa função pode ocasionar problemas na memória, caso você estoure os limites do número de caracteres reservados de uma string.</p>
 					<p>Por exemplo:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str8b.PNG" alt="" align="middle"><center></div>
+					<p>Neste caso serão contados apenas os 256 primeiros caracteres digitados.</p>
 					<h4>Pela função GETS</h4>
 					<p>Para usar a função gets(), é bem simples, basta passar uma string como argumento. A sintaxe é:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str9.PNG" alt="" align="middle"><center></div>
@@ -268,10 +270,10 @@
 					<p>Exemplo:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str10.PNG" alt="" align="middle"><center></div>
 					<h3>Como imprimir Strings</h3>
-					<h4>Printf()</h4>
+					<h4>Printf( )</h4>
 					<p>Para exibir uma string "str" com o printf(), fazemos:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str11.PNG" alt="" align="middle"><center></div>
-					<h4>Puts()</h4>
+					<h4>Puts( )</h4>
 					<p>Para exibir uma string "str" com o puts(), fazemos:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str13.PNG" alt="" align="middle"><center></div>
 					<h3>Funções da biblioteca padrão</h3>
@@ -282,12 +284,12 @@
 					<h4>strcpy</h4>
 					<p>strcpy copia o conteúdo de uma string para outra e coloca um terminador de string. Sua sintaxe é strcpy (destino, origem).</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str16.PNG" alt="" align="middle"><center></div>
-					<p>Tome cuidado com strcpy(), pois se a string a ser copiada for maior que a string de destino, provavelmente você gravará dados em lugares indesejados ― um problema conhecido como estouro de buffer. Para evitar esse problema, use a função strncpy, que recebe um terceiro argumento que corresponde ao número máximo de caracteres a serem copiados:</p>
+					<p>Tome cuidado com strcpy( ), pois se a string a ser copiada for maior que a string de destino, provavelmente você gravará dados em lugares indesejados ― um problema conhecido como estouro de buffer. Para evitar esse problema, use a função <b>strncpy</b>, que recebe um terceiro argumento que corresponde ao número máximo de caracteres a serem copiados:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str17.PNG" alt="" align="middle"><center></div>
 					<h4>strcat</h4>
 					<p>strcat concatena duas strings, adicionando o conteúdo da segunda ao final da primeira, além do terminador (\0). Note que a primeira string deve ter espaço suficiente para conter a segunda, para que não ocorra um "estouro de buffer". Por exemplo:</p>
 					<div class="row"><center><img class="img-responsive " src="img/vet/str18.PNG" alt="" align="middle"><center></div>
-					<p>Analogamente à função strncpy, existe também a função strncat, onde o número máximo de caracteres a serem copiados é o terceiro argumento.</p>
+					<p>Analogamente à função strncpy, existe também a função <b>strncat</b>, onde o número máximo de caracteres a serem copiados é o terceiro argumento.</p>
 					<h4>strcmp</h4>
 					<p>Se você tentar criar duas strings com o mesmo conteúdo e compará-las como faria como números, verá que elas "não são iguais". Isso ocorre porque, na verdade, o que está sendo comparado são os endereços de memória onde estão guardadas as strings. Para comparar o conteúdo de duas strings, você deve usar a função strcmp (ou suas variantes):</p>
 				    <div class="row"><center><img class="img-responsive " src="img/vet/str19.PNG" alt="" align="middle"><center></div>
@@ -299,10 +301,10 @@
 					</ul>
 					<p>Costuma parecer estranho dizer que uma string é menor ou maior que outra; na verdade essa comparação é entre a primeira letra que difere nas duas strings. Assim, se tivermos s1 = "abc" e s2 = "abd", diremos que s2 é maior que s1, pois na primeira posição em que as duas strings diferem, a letra em s2 é "maior".</p>
 					<p>É importante notar que a comparação feita por strcmp distingue maiúsculas de minúsculas. Isto é, as strings "ABC" e "abc" não são iguais para essa função.</p>
-					<p>O valor de retorno é:</p>
+					<p>As variantes mais usadas de strcmp são:</p>
 					<ul style="list-style-type:circle">
-							<li>strncmp - compara apenas os n primeiros caracteres das duas strings, sendo n um terceiro argumento.</li>
-							<li>stricmp - compara duas strings sem distinção entre maiúsculas e minúsculas. A sintaxe é igual à de strcmp. Essa função não faz parte da biblioteca padrão, mas é comumente encontrada como extensão particular de várias delas.</li>
+							<li><b>strncmp</b> - compara apenas os n primeiros caracteres das duas strings, sendo n um terceiro argumento.</li>
+							<li><b>stricmp</b> - compara duas strings sem distinção entre maiúsculas e minúsculas. A sintaxe é igual à de strcmp. Essa função não faz parte da biblioteca padrão, mas é comumente encontrada como extensão particular de várias delas.</li>
 					</ul>
 					
 					
@@ -321,6 +323,29 @@
 			
 			</div>
 				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="exercicios/lista01.pdf">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Vetores</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
 		</div>
 	</div>
 	

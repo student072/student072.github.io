@@ -94,7 +94,7 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
-					<li class="menuItem"><a href="#whatis">Home</a></li>
+					<li class="menuItem"><a href="index.html">Home</a></li>
 					<li class="menuItem"><a href="#useit">Aulas</a></li>
 					<li class="menuItem"><a href="#credits">Créditos</a></li>
 					<li class="menuItem"><a href="#contact">Contato</a></li>
@@ -109,7 +109,7 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
 				<h2>Estrutura de Repetição</h2>
-				<p class="lead" style="margin-top:0">O objetivo dessa unidade é introduzir o aluno a estrutura condicional. Será feita
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é introduzir o aluno a estrutura de repetição. Será feita
 				uma abordagem focando na linguagem C e também em alguns algoritmos para ajudar na compreensão</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1  wrap_title">
@@ -139,17 +139,17 @@
 						<h5>Em C utilizamos a estrutura FOR</h5>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao7.PNG" alt="" align="middle"><center></div>
 						<p>A primeira parte atribui um valor inicial a i, que tem como função controlar o número necessário de repetições.</p>
-						<p>A segunda parte corresponde a uma expressão relacional que. Quando assumir valor false, determinará o fim da repetição.</p>
+						<p>A segunda parte corresponde a uma expressão relacional que, quando assumir valor false, determinará o fim da repetição.</p>
 						<p>A terceira parte é responsável por alterar o valor da variável i (incremento ou decremento), com o objetivo de, em algum momento, fazer com que a condição assuma valor falso.</p>
 						<p>Exemplo:</p>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao8.PNG" alt="" align="middle"><center></div>
-						<p>A variável i é inicializada com o valor 1 e vai sendo incrementada em uma unidade (i++), e a cada incremento comando é executado. Esse processo se repete até a o valor da variável i 
+						<p>A variável i é inicializada com o valor 1 e vai sendo incrementada em uma unidade (i++), e a cada incremento <i>comando</i> é executado. Esse processo se repete até a o valor da variável i 
 						se tornar maior que 10, isso é, quando a condição i<=10 assume valor falso.</p>
-						<p>Caso houver a necessidade da repetição de mais de um comando é necessário coloca-los entre chaves. </p>
+						<p>Caso houver a necessidade da repetição de mais de um comando é necessário colocá-los entre chaves. </p>
 					</div>
 					
 				<div class="row">
-					<h4>Estrutura de Repetição para número definido de repetições e teste no início</h4>
+					<h4>Estrutura de Repetição para número indefinido de repetições e teste no início</h4>
 						<p>Essa estrutura de repetição é utilizada quando não se sabe o número de vezes em que um trecho do algoritmo ou do código deverá ser repetido, embora possa ser também utilizada 
 						   quando se sabe esse número.
 						</p>
@@ -157,34 +157,34 @@
 						   dentro da estrutura de repetição não são executados.</p>
 						<p>Descrição dos passos que são realizados:</p>
 						<ul style="list-style-type:circle">
-							<li>Primeiramente é feito o teste de uma determinada condição;</li>
-							<li>Se a condição for falsa então pula todos os comandos do bloco subordinado a estrutura (REPITA ou WHILE) e passa a executar os comandos após o bloco REPITA/ WHILE.</li>
-							<li>Se  condição for verdadeira então executa cada um dos comandos do bloco subordinado a estrutura (REPITA ou WHILE).</li>
-							<li>Após executar o último comando do bloco do REPITA/ WHILE volta ao primeira passo.</li>
+							<li><b>1 -</b> Primeiramente é feito o teste de uma determinada condição;</li>
+							<li><b>2 -</b> Se a condição for falsa então pula todos os comandos do bloco subordinado a estrutura (ENQUANTO ou WHILE) e passa a executar os comandos após o bloco REPITA/ WHILE.</li>
+							<li><b>3 -</b> Se  condição for verdadeira então executa cada um dos comandos do bloco subordinado a estrutura (ENQUANTO ou WHILE).</li>
+							<li><b>4 -</b> Após executar o último comando do bloco ENQUANTO/ WHILE volta ao primeira passo.</li>
 						</ul> 
 						<h5>Em pseudocódigo utilizamos a estrutura ENQUANTO</h5>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao3a.PNG" alt="" align="middle"><center></div>
-						<p>Enquanto a condição for verdadeira o comando1 será executado.</p>
+						<p>Enquanto a condição for verdadeira o <i>comando1</i> será executado.</p>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao3b.PNG" alt="" align="middle"><center></div>
-						<p>Enquanto a condição for verdadeira os comando1, comando 2 e comando3 serão executados.</p>
+						<p>Enquanto a condição for verdadeira <i>comando1</i>, <i>comando2</i> e <i>comando3</i> serão executados.</p>
 						<h5>Em C utilizamos a estrutura WHILE</h5>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao9.PNG" alt="" align="middle"><center></div>
-						<p> No exemplo a esquerda enquanto a condição for verdadeira o comando será executado. Já no exemplo a direita enquanto a condição for verdadeira os comando1 e comando2 
+						<p> No exemplo à esquerda enquanto a condição for verdadeira <i>comando</i> será executado. Já no exemplo a direita enquanto a condição for verdadeira <i>comando1</i> e <i>comando2</i> 
 						    serão executados.
 						</p>
 						<p>Exemplo</p>
-						<p>Pseudocódigo<p>
+						<b><p>Pseudocódigo<p></b>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao4.PNG" alt="" align="middle"><center></div>
-						<p>C</p>
+						<b><p>C</p></b>
 						<div class="row"><center><img class="img-responsive " src="img/rep/repeticao10.PNG" alt="" align="middle"><center></div>
 						<p>Simulação</p>
 						<div class="row"><center><img class="img-responsive " src="img/rep/tabela1.PNG" alt="" align="middle"><center></div>
 						<p>Portanto, nos trechos anteriores, os comandos que se localizam dentro da estrutura de repetição serão repetidos quatro vezes, que foi o período em que x se manteve menor que y.</p>
 				</div>
 				<div class="row">
-					<h4>Estrutura de Repetição para número definido de repetições e teste no início</h4>
+					<h4>Estrutura de Repetição para número indefinido de repetições e teste no início</h4>
 					<p>Essa estrutura de repetição é utilizada quando não se sabe o número de vezes em que um trecho do algoritmo ou do código deverá ser repetido, embora possa ser também utilizada quando se sabe esse número. </p>
-					<p>A diferença dessa estrutura(REPITA ou DO-WHILE) para a estrutura ENQUANTO/WHILE é que nao nessa estrutura os comandos são repetidos pelo menos uma vez, já que a condição se encontra no estado final.</p>
+					<p>A diferença da estrutura ENQUANTO/WHILE para a estrutura REPITA/DO-WHILE é que nao nessa estrutura os comandos são repetidos pelo menos uma vez, já que a condição se encontra no estado final.</p>
 					<h5>Em pseudocódigo utilizamos a estrutura REPITA</h5>
 					<div class="row"><center><img class="img-responsive " src="img/rep/repeticao5.PNG" alt="" align="middle"><center></div>
 				    <h5>Em C utilizamos a estrutura DO-WHILE</h5>
@@ -211,6 +211,29 @@
 			
 			</div>
 				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="exercicios/lista01.pdf">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Estrutura de Repetição</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
 		</div>
 	</div>
 	
