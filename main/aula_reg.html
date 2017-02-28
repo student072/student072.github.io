@@ -109,8 +109,8 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
 				<h2>Registros</h2>
-				<p class="lead" style="margin-top:0">O objetivo dessa unidade é introduzir o aluno a estrutura condicional. Será feita
-				uma abordagem focando na linguagem C e também em alguns algoritmos para ajudar na compreensão</p>
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar ao aluno o conceito de registros
+				e sua utilização na linguagem C.</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1  wrap_title">
 					<div class="row">
@@ -153,33 +153,35 @@
 					</div>
 					<div class="row">
 						<h4>Acesso a membros do registro</h4>
-						<p>Depois que uma varíavel é declarada, o programa poderá manipular o seu conteúdo, ou seja, os valores armazenados em cada membro da estrutura.</p>
-						<p>Para que tais manipulações sejam feitas é preciso informar o nome da varíavel e o campo que será manipulado. Por exemplo:</p>
-						<div class="row"><center><img class="img-responsive " src="img/reg/reg8.PNG" alt="" align="middle"><center></div>
+						<p>Depois que uma varíavel registro é declarada, o programa poderá manipular o seu conteúdo, ou seja, os valores armazenados em cada campo de sua estrutura. Para isso utilizamos individualmente esses campos como se fossem variáveis normais. A sintaxe é:</p>
 						<div class="row"><center><img class="img-responsive " src="img/reg/reg9.PNG" alt="" align="middle"><center></div>
-						<div class="row"><center><img class="img-responsive " src="img/reg/reg10.PNG" alt="" align="middle"><center></div>
+						<p>Vejamos alguns exemplos:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/reg8.PNG" alt="" align="middle"><center></div>
 					</div>
-					
-				<div class="row">
-					<h4>Exemplos</h4>
-					<p>Faça um programa que execute as seguintes etapas:</p>
-					<ul style="list-style-type:circle">
-							<li>Digite 10 números inteiros e os armazene em um mator;</li>
-							<li>Verifique qual desses números é maior;</li>
-							<li>Imprima os elementos do mator e em seguida o seu maior elemento.</li>
-					</ul>
-					<h5> Solução em pseudocódigo</h5>
-					<div class="row"><center><img class="img-responsive " src="img/mat/exemplo5.PNG" alt="" align="middle"><center></div>
-					<h5> Solução em C</h5>
-					<div class="row"><center><img class="img-responsive " src="img/mat/exemplo4.PNG" alt="" align="middle"><center></div>
-						
-				
-				</div>
+					<div class="row">
+						<h4>Lendo e escrevendo Registros</h4>
+						<p>A leitura dos campos de um registro deve ser feita campo a campo, como se fossem variáveis independentes.A mesma coisa vale para a escrita.</p>
+						<p>Vejamos:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/exemplo1.PNG" alt="" align="middle"><center></div>
+						<p>Exemplo de execução:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/saida.PNG" alt="" align="middle"><center></div>
+					</div>
+					<div class="row">
+						<h4>Atribuição de Registros</h4>
+						<p>Podemos atribuir um registro a outro diretamente:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/reg11.PNG" alt="" align="middle"><center></div>
+						<p>Automaticamente é feito uma cópia de cada campo de var2_registro para var1_registro.</p>
+						<p>Exemplo:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/exemplo2.PNG" alt="" align="middle"><center></div>
+						<p>Exemplo de execução:</p>
+						<div class="row"><center><img class="img-responsive " src="img/reg/saida2.PNG" alt="" align="middle"><center></div>
+					</div>
 				<div class="row">
 					<center>
-					<h3>Vídeo</h3>
+					<h3>Vídeo Explicativo - Registros</h3>
+					<p>                             </p>
 					<video width=80% height="315" class="img-responsive" controls>
-					  <source src="video/repeticaao.mp4" type="video/mp4">
+					  <source src="video/registros.mp4" type="video/mp4">
 					  <source src="movie.ogg" type="video/ogg">
 					  Your browser does not support the video tag.
 					</video>
@@ -192,6 +194,29 @@
 			
 			</div>
 				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="exercicios/lista08.pdf">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Registros</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
 		</div>
 	</div>
 	
