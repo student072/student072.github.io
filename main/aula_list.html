@@ -197,7 +197,7 @@
 				
 				<div class="row">
 					<h3>Lista simplesmente encadeada e ordenada</h3>
-					<p align="justify">A diferença desse tipo de lista simplesmente encadeada é que ele utiliza determinado dado armazenado como parâmetro para a ordenação a lista. No nosso caso utilizaremos "num" para ordenar nossa lista de maneira crescente.</p>
+					<p align="justify">A diferença desse tipo de lista simplesmente encadeada é que ele utiliza determinado dado armazenado como parâmetro para a ordenação da lista. No nosso caso utilizaremos "num" para ordenar nossa lista de maneira crescente.</p>
 					<p>Para este tipo de lista realizaremos 4 operações:</p>
 					<ul style="list-style-type:circle">
 							<li>Inserção na lista;</li>
@@ -257,7 +257,7 @@
 						<div class="row"><center><img class="img-responsive " src="img/list/intro_deno.PNG" alt="" align="middle"><center></div>
 			</div>
 			<div class="row">
-				<h3>Lista duplamente encadeada e ordenada</h3>
+				<h3>Lista duplamente encadeada e não ordenada</h3>
 					<p align="justify">Como o próprio nome descreve é uma lista duplamente encadeada em que não há qualquer tipo de ordenação em relação aos nós pertencentes a lista.  A disposição dos mesmos dependerá da ordem e local (início ou fim da lista) em que forem inseridos.</p>
 					<p>Para este tipo de lista realizaremos 6 operações:</p>
 					<ul style="list-style-type:circle">
@@ -309,6 +309,70 @@
 					<p>O resultado final após essa operação seria esse:</p>
 					<div class="row"><center><img class="img-responsive " src="img/list/inicio_lista.PNG" alt="" align="middle"><center></div>
 				</div>
+				<div class="row">
+				<h3>Lista duplamente encadeada e ordenada</h3>
+					<p align="justify">A diferença desse tipo de lista duplamente encadeada é que ele utiliza determinado dado armazenado como parâmetro para a ordenação da lista. No nosso caso utilizaremos "num" para ordenar nossa lista de maneira crescente.</p>.
+					<p>Para este tipo de lista realizaremos 6 operações:</p>
+					<ul style="list-style-type:circle">
+							<li>Inserção na lista;</li>
+							<li>Impressão da lista do ínicio ao fim;</li>
+							<li>Impressão da lista do fim ao início;</li>
+							<li>Remoção de elemento da lista;</li>
+							<li>Esvaziar lista</li>
+					</ul>
+					<h4>Inserção na lista</h4>
+					<p>Esta é a implementação da função que utilizaremos para inserir um dado na lista.</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/insere_deo.PNG" alt="" align="middle"><center></div>
+					<p>Na prática isso aconteceria da seguinte maneira:</p>
+					<p>Inicialmente temos os ponteiros inicio e fim apontados para null: </p>
+					<div class="row"><center><img class="img-responsive " src="img/list/inicio_lista.PNG" alt="" align="middle"><center></div>
+					<p>Primeiro: inseriremos o número 8 na lista.</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/insere_deo1.PNG" alt="" align="middle"><center></div>
+					<p>Segundo: vamos inserir o número 9 na lista.</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/insere_deo2.PNG" alt="" align="middle"><center></div>
+					<p>Terceiro: vamos inserir o número 3 na lista:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/insere_deo3.PNG" alt="" align="middle"><center></div>
+					<p>Por fim, vamos inserir o número 5 na lista:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/insere_deo4.PNG" alt="" align="middle"><center></div>
+					
+					<h4>Impressão da lista do início ao fim</h4>
+					<p>Para imprimir os elementos da lista (do início para o fim), utilizaremos a seguinte função: </p>
+					<div class="row"><center><img class="img-responsive " src="img/list/imprime_deno1.PNG" alt="" align="middle"><center></div>
+					<p>A saída seria: 2   5   7   9.</p>
+					<h4>Impressão da lista do fim ao início</h4>
+					<p>Para imprimir os elementos da lista (do fim para o início), utilizaremos a seguinte função: </p>
+					<div class="row"><center><img class="img-responsive " src="img/list/imprime_deno2.PNG" alt="" align="middle"><center></div>
+					<p>A saída seria: 9   7   5   2.</p>
+					<h4>Remoção de elemento da lista</h4>
+					<p>Para removermos um determinado elemento da lista, utilizaremos a seguinte função:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/remove1_deno.PNG" alt="" align="middle"><center></div>
+					<div class="row"><center><img class="img-responsive " src="img/list/remove2_deno.PNG" alt="" align="middle"><center></div>
+					<p>Vamos então remover o número 5 da nossa lista:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/remove_deo1.PNG" alt="" align="middle"><center></div>
+					<p>Depois removeremos o número 9.</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/remove_deo2.PNG" alt="" align="middle"><center></div>
+					<p>E por fim removeremos o número 2.</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/remove_deo3.PNG" alt="" align="middle"><center></div>
+					<h4>Esvaziar lista</h4>
+					<p>Nesta última operação esvaziaremos a nossa lista, isto significa remover todos o seus nós restantes desalocando o espaço reservado para cada um. Esta é a implementação utilizada:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/listaseno5.PNG" alt="" align="middle"><center></div>
+					<p>O resultado final após essa operação seria esse:</p>
+					<div class="row"><center><img class="img-responsive " src="img/list/inicio_lista.PNG" alt="" align="middle"><center></div>
+				</div>
+				<div class="row">
+					<h3>Listas Circulares</h3>
+						<p align="justify">As listas citadas anteriormente também podem ser implementadas de forma circular. Isso significa que, quando forem simplesmente encadeadas seu ponteiro próximo “*prox” do último elemento apontará para o primeiro elemento da lista. Já quando forem duplamente encadeadas terão além do ponteiro próximo “*prox” do último elemento apontando para o primeiro elemento da lista, o ponteiro anterior “*ant” do primeiro elemento apontará para o último elemento da lista.</p>
+						<ul style="list-style-type:circle">
+							<b><center><li>Lista circular simplesmente encadeada e não ordenada</li></center></b>
+							<div class="row"><center><img class="img-responsive " src="img/list/circular_seno.PNG" alt="" align="middle"><center></div>
+							<b><center><li>Lista circular simplesmente encadeada e ordenada</li></center></b>
+							<div class="row"><center><img class="img-responsive " src="img/list/circular_seo.PNG" alt="" align="middle"><center></div>
+							<b><center><li>Lista circular duplamente encadeada e não ordenada.</li></center></b>
+							<div class="row"><center><img class="img-responsive " src="img/list/circular_deno.PNG" alt="" align="middle"><center></div>
+							<b><center><li>Lista circular duplamente encadeada e ordenada.</li></center></b>
+							<div class="row"><center><img class="img-responsive " src="img/list/circular_deo.PNG" alt="" align="middle"><center></div>
+					     </ul>
+			</div>
 				<center>
 				<h3>Video Explicativo - Ponteiros 1</h3>
 					<p>                                      </p>
