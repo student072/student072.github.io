@@ -1,0 +1,786 @@
+ <!-- FlatFy Theme - Andrea Galanti /-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>Aula - Árvores Binárias</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	
+	
+	
+
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <!--<div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Flatfy</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Clean & minimal Theme</h3>
+			<ul class="list-inline intro-social-buttons">
+				<li><a href="https://twitter.com/galantiandrea" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Twitter</span></a>
+				</li>
+				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Free Download</span></a>
+				</li>
+			</ul>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+			</div>
+		</div>
+    </div>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">REA-AED</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					<li class="menuItem"><a href="index.html">Home</a></li>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aulas<span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="aula_cb.html">Conceitos Básicos</a></li>
+							<li><a href="aula_seq.html">Estrutura Sequencial</a></li>
+							<li><a href="aula_cond.html">Estrutura Condicional</a></li>
+							<li><a href="aula_rep.html">Estrutura de Repetição</a></li>
+							<li><a href="aula_vet.html">Vetores</a></li>
+							<li><a href="aula_rep.html">Matrizes</a></li>
+							<li><a href="aula_func.html">Procedimentos e Funções</a></li>
+							<li><a href="aula_reg.html">Registros</a></li>
+							<li><a href="aula_rec.html">Recursividade</a></li>
+							<li><a href="aula_pon.html">Ponteiros</a></li>
+							<li role="separator" class="divider"></li>
+						  </ul>
+						</li>
+						<li class="menuItem"><a href="#contact">Contato</a></li>
+					</ul>
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+	
+	<!-- What is -->
+	<div id="whatis" class="content-section-a" style="border-top: 0">
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
+				<h2>Árvores Binárias</h2>
+				<p class="lead" style="margin-top:0">O objetivo dessa unidade é apresentar o conteúdo relacionado a Árvores Binárias. Será feita
+				uma abordagem focando na linguagem C.</p>
+			</div>
+			<div class="col-md-10 col-md-offset-1  wrap_title">
+				<div class="row">
+					<h3>Estruturas de dados do tipo árvore</h3>
+					<p align="justify">Diferentemente das estruturas de dados que vistas nas últimas aulas (listas, pilhas e filas), as estruturas de dados do tipo árvore não apresentam uma forma linear, ou seja, os elementos não estão armazenados de maneira sequencial. .</p>
+						<div class="row"><center><img class="img-responsive " src="img/arv/arvore.PNG" alt="" align="middle"><center></div>
+				</div>
+				<div class="row">
+					<h3>Árvores binárias</h3>
+						<p align="justify">Uma arvore binária é uma estrutura de dados com capacidade de armazenar finitos elementos e que pode ser representada como uma hierarquia onde cada elemento é chamado de nó. O nó inicial ou o primeiro elemento é chamado de raiz.</p>
+						<p>Uma árvore pode estar vazia ou pode ser particionada em três subconjuntos:</p>
+						<ul style="list-style-type:circle">
+						<li>•	 Nó Raiz</li>
+						<li>•	 Sub-árvore direita</li>
+						<li>•	 Sub-árvore esquerda</li>
+					</ul>
+					<div class="row"><center><img class="img-responsive " src="img/arv/sub_conjuntos.PNG" alt="" align="middle"><center></div>
+					<h4>Propriedades de uma árvore binária</h4>
+					<p> <b>A) </b>  Os nós da sub-árvore esquerda são menores que os nós da sub-arvore direita e também menores que o nó raiz.</p>
+					<p> <b>B) </b> Os nós da sub-árvore direita são maiores que os nós da sub-arvore esquerda e também maiores que o nó raiz.</p>
+					<p> <b>C) </b>Nomenclatura dos nós:</p>
+					<ul style="list-style-type:circle">
+						<li>•	 <b>Nó Raiz:</b> é o nó do topo da árvore;</li>
+						<li>•	 <b> Nó Pai:</b>  nó que está acima de um nó filho e diretamente ligado a ele;</li>
+						<li>•	  <b>Nó Filho:</b> nó que está abaixo de um nó pai e diretamente ligado a ele;</li>
+						<li>•	  <b>Folhas:</b>  são os nós que não têm filhos; são os últimos nós da árvore;</li>
+					</ul>
+					<div class="row"><center><img class="img-responsive " src="img/arv/filho_pai.PNG" alt="" align="middle"><center></div>
+					<p> <b>D) </b>Em uma árvore binária um nó pai pode ter no máximo dois nós filhos</p>
+					<p> <b>E) </b>O grau de um nó representa seu número de sub-arvores (nós filhos). Em uma árvore binária o grau máximo de um nó é 2 e o menor 0.</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/grau.PNG" alt="" align="middle"><center></div>
+					<p> <b>F) </b>O nível de um nó representa a sua distância do nó raiz, logo o nível do nó raiz é 0;</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/nivel.PNG" alt="" align="middle"><center></div>
+					<p> <b>G) </b>O número máximo de nós em um nível é dado pela expressão 2^n, sendo n o nível da árvore;</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/max_nos.PNG" alt="" align="middle"><center></div>
+					<p> <b>H) </b>Árvore estritamente binária: todos nós da arvore tem 0 ou 2 filhos</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/estritamente_binaria.PNG" alt="" align="middle"><center></div>
+					<p> <b>I) </b>Árvore completa: todos os nós com menos de dois filhos ficam no último e penúltimo nível da árvore</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/completa.PNG" alt="" align="middle"><center></div>
+					<p> <b>J) </b>Árvore cheia: árvore estritamente binária e completa.</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/cheia.PNG" alt="" align="middle"><center></div>
+					<p> <b>K) </b>Em consultas em árvores binárias todos os nós da ávore são listados, mudando-se apenas a ordem da listagem de acordo com o tipo de consulta realizada.</p>
+					<p>Temos três tipo de consultas:</p>
+					<ul style="list-style-type:circle">
+					<li><b>Em ordem:</b> neste tipo de consulta cada árvore é mostrada primeiramente com o ramo da esquerda, depois a raiz e por fim o ramo da direita.</li>
+					<li><b>Pré-ordem:</b> neste tipo de consulta cada árvore é mostrada primeiramente com a raiz, depois o ramo da esquerda e por fim o ramo da direita.</li>
+					<li><b>Pós-ordem:</b> neste tipo de consulta cada árvore é mostrada primeiramente com o ramo da esquerda, depois o ramo da direita e por fim a raiz.</li>
+					<div class="row"><center><img class="img-responsive " src="img/arv/consultas.PNG" alt="" align="middle"><center></div>
+					</ul>
+				</div>
+				<div class="row">
+					<h3>Implementação</h3>
+					<h4>Definição do registro</h4>
+					<p>Para representarmos um elemento da árvore, será definido um registro da seguinte maneira: </p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/struct_arvore.PNG" alt="" align="middle"><center></div>
+					<p>Para operações de consultas e para esvaziar a árvore utilizaremos uma estrutura auxiliar PILHA.</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/struct_pilha.PNG" alt="" align="middle"><center></div>
+					<p>Também precisaremos de ponteiros auxiliares do tipo ARVORE e PILHA.</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/ponteiros_auxiliares.PNG" alt="" align="middle"><center></div>
+					<p>Serão realizadas as seguintes operações como árvores binárias:</p>
+					<ul style="list-style-type:circle">
+							<li>Inserção de um nó na árvore;</li>
+							<li>Consultar arvore em ordem;</li>
+							<li>Consultar arvore em pré-ordem;</li>
+							<li>Consultar arvore em pós-ordem;</li>
+							<li>Remoção de um nó da árvore;</li>
+							<li>Esvaziar árvore;</li>
+					</ul>
+					
+					<h4>Inserção de um nó na árvore</h4>
+					<p>Esta é a implementação da função que utilizaremos para inserir um elemento na árvore.</p>
+					<pre>
+void insere_elemento(){
+	/*a cada inserção alocamos dinamicamente um espaço para um novo elemento*/
+	Arvore *novo =(Arvore*) malloc(sizeof(Arvore));
+	printf("Digite o numero a ser inserido na arvore: ");
+	scanf("%d",&novo->num);
+	novo->esq = NULL;
+	novo->dir = NULL;
+	/*caso a árvore esteja vazia, o elemento inserido será a raiz */
+	if(raiz == NULL){
+		raiz = novo;
+	/*caso a árvore  já contenha algum elemento*/
+	}else{
+		/*variável para verificação*/
+		int achou;
+		/*aux aponta para o mesmo endereço de raiz*/
+		aux = raiz;
+		achou = 0;
+		/*é feita uma busca em toda árvore para saber onde novo deve ser enserido*/
+		while(achou == 0){
+			/*caso o novo numero a ser inserido seja menor que aux-> num*/
+			if(novo->num < aux->num){
+				/*caso não aja nenhum elemento a esquerda de aux, novo será inserido a esquerda dele*/
+				if(aux->esq == NULL){
+					aux->esq = novo;
+					achou = 1;
+				/*caso já exista um elemento a esquerda de aux, aux  aponta para este elemento  e uma nova iteração será realizada*/
+				}else{
+					aux = aux->esq;
+				}
+			/*caso o novo numero a ser inserido seja maior ou igual a aux-> num*/
+			}else if(novo->num >= aux->num){
+				/*caso não aja nenhum elemento a direita de aux, novo será inserido a direita dele*/
+				if(aux->dir == NULL){
+					aux->dir = novo;
+					achou = 1;
+				}else{
+					/*caso já exista um elemento a direita de aux, aux  aponta para este elemento  e uma nova iteração será realizada*/
+					aux = aux->dir;
+				}
+			}
+		}
+	}
+	printf("\nNumero inserido na arvore!");
+	getch();
+}
+					</pre>
+					<p>Na prática isso aconteceria da seguinte maneira:</p>
+					<p>Inicialmente temos o ponteiro raiz apontado para null:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/inicio_arvore.PNG" alt="" align="middle"><center></div>
+					<p>Agora vamos as inserções:</p>
+					<p>Inserção do número 37 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere1.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 20 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere2.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 10 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere3.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 30 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere4.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 80 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere5.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 100 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere6.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 180 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere7.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 90 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere8.PNG" alt="" align="middle"><center></div>
+					<p>Inserção do número 5 na árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/insere9.PNG" alt="" align="middle"><center></div>
+					
+					<h4>Consultar árvore em ordem</h4>
+					<p>Para realizarmos a consulta em ordem na árvore utilizaremos a seguinte implementação:</p>
+					<pre>
+*consulta em ordem mostra os nós na seguinte ordem
+	1° ramo da esquerda
+	2° raiz
+	3° ramo da direita	*/
+void consulta_arvore_ordem(){
+	/*caso a árvore esteja vazia*/
+	if(raiz == NULL){
+		printf("\nArvore Vazia!!");
+	/*caso a árvore contenha elementos*/
+	}else{
+		/*aux aponta para o endereço de raiz*/
+		aux = raiz;
+		/*como aqui utilizaremos uma pilha, incializamos seu topo com null*/
+		topo = NULL;
+		do{
+			/*caminha pela árvore pelo ramo da esquerda até NULL, colocando cada elemento visitado na pilha */
+			while(aux != NULL){
+				/*alocamos um espaço para inserir o elemento a ser mostrado na pilha*/
+				Pilha *aux_pilha =(Pilha*) malloc(sizeof(Pilha));
+				/*a pilha recebe o elemento apontado por auix*/
+				aux_pilha->num = aux;
+				/*para encadear os elementos da pilha, aux_pilha->prox aponta para o topo da pilha*/
+				aux_pilha->prox = topo;
+				/*o topo da pilha apontará para o elemento que está sendo inserido na pilha*/
+				topo = aux_pilha;
+				/*aux aponta para o elemento a esquerda do aux atual*/
+				aux = aux->esq;
+			}
+			/*imprimiremos aos elementos empilhados no momento a partir do topo */
+			if(topo != NULL){
+				aux_pilha = topo;
+				printf("%d ", aux_pilha->num->num);
+				/*caso aja um elemento a direita do elemento apontado por topo na árvore, seu prox será NULL, portanto ao encontrar
+				um elemento a direita do elemento impresso retornaremos ao while anterior antes de imprimir o restante da pilha*/
+				aux = topo->num->dir;
+				topo = topo->prox;
+				free(aux_pilha);
+			}
+		}while(topo != NULL || aux != NULL);
+	}
+	getch();
+}
+					</pre>
+					<p>Com base na árvore final apresentada nos processos de inserção teremos o seguinte resultado da consulta:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/em_ordem.PNG" alt="" align="middle"><center></div>
+					<div class="row"><center><img class="img-responsive " src="img/arv/consulta_ordem.PNG" alt="" align="middle"><center></div>
+					<h4>Consultar árvore em pré-ordem</h4>
+					<p>Para realizarmos a consulta em pré-ordem na árvore utilizaremos a seguinte implementação:</p>
+					<pre>
+/*consulta em pré-ordem mostra os nós na seguinte ordem
+	1° raiz
+	2° ramo da esquerda
+	3° ramo da direita	*/
+void consulta_arvore_pre_ordem(){
+	/*caso a árvore esteja vazia*/
+	if(raiz == NULL){
+		printf("\nArvore Vazia!!");
+	/*caso a árvore contenha elementos*/
+	}else{
+		/*aux aponta para o endereço de raiz*/
+		aux = raiz;
+		/*como aqui utilizaremos uma pilha, incializamos seu topo com null*/
+		topo = NULL;
+		do{
+			/*caminha pela árvore mostrando cada elemento visitado, e também coloca cada elemento visitado na pilha */
+			while(aux != NULL){
+				/*alocamos um espaço para inserir um elemento na pilha*/
+				Pilha *aux_pilha =(Pilha*) malloc(sizeof(Pilha));
+				/*impressão do elemento apontado por aux*/
+				printf("%d ", aux->num);
+				/*colocamos na pilha o elemento impresso*/
+				aux_pilha->num = aux;
+				aux_pilha->prox = topo;
+				topo = aux_pilha;
+				/*fazemos com que aux aponte para o elemento a sua esquerda*/
+				aux = aux->esq;
+			}
+			if(topo != NULL){
+				aux_pilha = topo;
+				topo = topo->prox;
+				/*aux aponta para o elemento a direita de topo na árvore*/
+				aux = aux_pilha->num->dir;
+				free(aux_pilha);
+			}
+		}while(topo != NULL || aux != NULL);
+	}
+	getch();
+}
+					</pre>
+					<p>Com base na árvore final apresentada nos processos de inserção teremos o seguinte resultado da consulta:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/pre_ordem.PNG" alt="" align="middle"><center></div>
+					<div class="row"><center><img class="img-responsive " src="img/arv/consulta_preordem.PNG" alt="" align="middle"><center></div>
+					<h4>Consultar árvore em pós-ordem</h4>
+					<p>Para realizarmos a consulta em pós-ordem na árvore utilizaremos a seguinte implementação:</p>
+					<pre>
+/*consulta em pós-ordem mostra os nós na seguinte ordem
+	1° ramo da esquerda
+	2° ramo da dreita
+	3° raiz */
+void consulta_arvore_pos_ordem(){
+	/*caso a árvore esteja vazia*/
+	if(raiz == NULL){
+		printf("\nArvore Vazia!!");
+	/*caso a árvore contenha elementos*/
+	}else{
+		/*aux aponta para o endereço de raiz*/
+		aux = raiz;
+		/*como aqui utilizaremos uma pilha, incializamos seu topo com null*/
+		topo = NULL;
+		do{
+			do{
+				/*caminha pela árvore pelo ramo da esquerda até NULL, colocando cada elemento visitado na pilha, além disso
+				   antes de colocar a raiz de cada sub-árvore na pilha também caminha no ramo da direita*/
+				while(aux != NULL){
+					/*alocamos um espaço para inserir um elemento na pilha*/
+					Pilha *aux_pilha =(Pilha*) malloc(sizeof(Pilha));
+					/*a pilha recebe o elemento apontado por auix*/
+					aux_pilha->num = aux;
+					/*para encadear os elementos da pilha, aux_pilha->prox aponta para o topo da pilha*/
+					aux_pilha->prox = topo;
+					/*o topo da pilha apontará para o elemento que está sendo inserido na pilha*/
+					topo = aux_pilha;
+					/*aux aponta para o elemento a esquerda do aux atual*/
+					aux = aux->esq;
+				}
+				/*caso o exista um elemento a direita do endereço apontado por topo na árvore, aux aponta para esse elemento*/
+				if(topo->num->dir != NULL){
+					aux = topo->num->dir;
+				}
+			}while(aux != NULL);
+			if(topo!= NULL){
+				/*imprime o elemento apontado por topo*/
+				printf("%d ", topo->num->num);
+				/*se ainda existirem elementos na pilha além de topo*/
+				if(topo->prox != NULL){
+					/*caso o exista um elemento a direita do endereço apontado por topo na árvore e esse elemento seja diferente de topo,
+					aux apontara para esse elementoe topo apontará para o próximo elemento da pilha*/
+					if(topo->prox->num->dir != NULL && topo->prox->num->dir != topo->num){
+						aux = topo->prox->num->dir;
+						topo = topo->prox;
+					/*caso o exista um elemento a direita do endereço apontado por topo na árvore e esse elemento seja igual a topo,
+						topo apontará para o próximo elemento da pilha e este será  impresso*/
+					}else{
+						/*caso o exista um elemento a direita do endereço apontado por topo na árvore e esse elemento seja igual a topo,
+						topo apontará para o próximo elemento da pilha e este será  impresso*/
+						while(topo->prox != NULL && topo->prox->num->dir == topo->num){
+							topo = topo->prox;
+							printf("%d ", topo->num->num);
+						}
+						/*topo apontará para o próximo elemento da pilha*/
+						topo = topo->prox;
+						/*se topo não for null aux aponta para o elemento a direita do endereço apontado por topo na árvoree*/
+						if(topo != NULL){
+							aux  = topo->num->dir;
+						/*caso contrário aux recebe NULL*/
+						}else{
+							aux = NULL;
+						}
+					}
+				/*se topo igual a NULL*/
+				}else{
+					topo = topo->prox;
+					aux = NULL;
+				}
+			}
+		}while(topo != NULL || aux != NULL);
+
+	}
+	getch();
+}
+					</pre>
+					<p>Com base na árvore final apresentada nos processos de inserção teremos o seguinte resultado da consulta:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/pos_ordem.PNG" alt="" align="middle"><center></div>
+					<div class="row"><center><img class="img-responsive " src="img/arv/consulta_posordem.PNG" alt="" align="middle"><center></div>
+					<h4>Remover um nó da árvore</h4>
+					<p>Para removermos um elemento da árvore, utilizaremos a seguinte função:</p>
+					<pre>
+void remove_elemento(){
+	/*caso a árvore esteja vazia*/
+	if(raiz == NULL){
+		printf("\nArvore Vazia!!");
+	/*caso a árvore contenha elementos*/
+	}else{
+		int numero, achou;
+		printf("Digite o numero a ser removido da arvore: ");
+		scanf("%d", &numero);
+		/*aux aponta para o endereço de raiz*/
+		aux = raiz;
+		achou = 0;
+		/*varre toda a árvore a procura do número a ser removido*/
+		while(aux != NULL && achou == 0){
+			if(aux->num == numero){
+				achou = 1;
+			}else if(aux->num > numero){
+				aux = aux->esq;
+				}else{
+					aux = aux->dir;
+				}
+		}
+		/*caso o número não seja encontrado*/
+		if(achou == 0){
+			printf("Numero nao encontrado!");
+		/*caso o número seja encontrado*/
+		}else{
+			/*caso o número a ser removido não seja a raiz*/
+			if(aux != raiz){
+				anterior = raiz;
+				/*aqui procura-se o número anterior ao número a ser removido, o endereço deste será armazenado em anteirior*/
+				while(anterior->dir != aux && anterior->esq != aux){
+					if(anterior->num > numero){
+						/*o número esta a esqueda da árvore*/
+						anterior = anterior->esq;
+					}else{
+						/*o número esta a direita da árvore*/
+						anterior = anterior->dir;
+					}
+				}
+				/*se o nó a ser removido for um nó folha*/
+				if(aux->dir == NULL && aux->esq == NULL){
+						/*se o nó a ser removido esta a direita de aux*/
+						if(anterior->dir == aux){
+							anterior->dir = NULL;
+						/*se o nó a ser removido esta a esquerda de aux*/
+						}else{
+							anterior->esq = NULL;
+						}
+					free(aux);
+				/*se o nó a ser removido for um nó não folha*/
+				}else{
+					/*se o nó a ser removido tiver apenas filho a direita*/
+					if(aux->dir != NULL  && aux->esq == NULL){
+						/*se o nó a ser removido estiver a esquerda de anterior*/
+						if(anterior->esq == aux){
+							anterior->esq = aux->dir;
+						/*se o nó a ser removido estiver a direita de anterior*/
+						}else{
+							anterior->dir = aux->dir;
+						}
+						free(aux);
+					/*se o nó a ser removido tiver apenas filho a esquerda*/
+					}else if(aux->esq != NULL && aux->dir == NULL){
+						/*se o nó a ser removido estiver a esquerda de anterior*/
+						if(anterior->esq == aux){
+							anterior->esq = aux->esq;
+						/*se o nó a ser removido estiver a direita de anterior*/
+						}else{
+							anterior->dir = aux->esq;
+						}
+						free(aux);
+					/*se o nó a ser removido tiver filho a direita e a esquerda*/
+					}else if(aux->esq != NULL && aux->dir != NULL){
+						/*se o nó a ser removido estiver a direita de anterior*/
+						if(anterior->dir == aux){
+							anterior->dir = aux->dir;
+							/*o nó a esquerda do nó a ser removido fica apontado por aux1*/
+							aux1 = aux->esq;
+						/*se o nó a ser removido estiver a esquerda de anterior*/
+						}else{
+							anterior->esq = aux->dir;
+							/*o nó a direita do nó a ser removido fica apontado por aux1*/
+							aux1 = aux->esq;
+						}
+						free(aux);
+						/*aux aponta para anteirior*/
+						aux = anterior;
+						/*realocando o pedaço da árvore*/
+						while(aux != NULL){
+							/*caso aux seja menor, que aux1*/
+							if(aux->num < aux1->num){
+								/*caso aux não tenha filho a direita*/
+								if(aux->dir == NULL){
+									aux->dir = aux1;
+									aux = NULL;
+								/*caso aux tenha filho a direita*/
+								}else{
+									aux = aux->dir;
+								}
+							/*caso aux seja maior, que aux1*/
+							}else if(aux->num > aux1->num){
+								/*caso aux não tenha filho a esquerda*/
+								if(aux->esq == NULL){
+									aux->esq = aux1;
+									aux = NULL;
+								/*caso aux tenha filho a esquerda*/
+								}else{
+									aux = aux->esq;
+								}
+							}
+						}
+					}
+				}
+			/*caso o número a ser removido não seja a raiz*/
+			}else{
+				/*se o nó a ser removido for raiz e folha*/
+				if(aux->dir == NULL && aux->esq == NULL){
+					free(aux);
+					raiz = NULL;
+				}else{
+					/*se o nó a ser removido tiver apenas filho a direita*/
+					if(aux->dir != NULL && aux->esq == NULL){
+						raiz = aux->dir;
+						free(aux);
+					/*se o nó a ser removido tiver apenas filho a esquerda*/
+					}else if(aux->esq != NULL && aux->dir == NULL){
+						raiz = raiz->esq;
+						free(aux);
+					/*se o nó a ser removido tiver filho a direita e a esquerda*/
+					}else if(aux->dir != NULL && aux->esq != NULL){
+						raiz = aux->dir;
+						aux1 = aux->esq;
+						free(aux);
+						aux = raiz;
+						/*realocando o pedaço da árvore*/
+						while(aux != NULL){
+							/*caso aux seja menor, que aux1*/
+							if(aux->num < aux1->num){
+								/*caso aux não tenha filho a direita*/
+								if(aux->dir == NULL){
+									aux->dir = aux1;
+									aux = NULL;
+								/*caso aux tenha filho a direita*/
+								}else{
+									aux = aux->dir;
+								}
+							/*caso aux seja maior, que aux1*/
+							}else if(aux->num > aux1->num){
+								/*caso aux não tenha filhos a esquerda*/
+								if(aux->esq == NULL){
+									aux->esq = aux1;
+									aux = NULL;
+								/*caso aux tenha filhos a esquerda*/
+								}else{
+									aux = aux->esq;
+								}
+							}
+						}
+					}
+				}
+			}
+			printf("Numero excluido da Arvore!");
+		}
+	}
+	getch();
+}
+					</pre>
+					<p>Agora vamos as remoções:</p>
+					<p>Remoção do número 180 da árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/remove1.PNG" alt="" align="middle"><center></div>
+					<p>Remoção do número 80 da árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/remove2.PNG" alt="" align="middle"><center></div>
+					<p>Remoção do número 10 da árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/remove3.PNG" alt="" align="middle"><center></div>
+					<p>Remoção do número 20 da árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/remove4.PNG" alt="" align="middle"><center></div>
+					<p>Remoção do número 37 da árvore:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/remove5.PNG" alt="" align="middle"><center></div>
+					
+					<h4>Esvaziar árvore</h4>
+					<p>Nesta última operação esvaziaremos a nossa árvore, ou seja, removeremos todos o seus elementos restantes. Esta é a implementação utilizada:</p>
+					
+					<pre>
+void esvaziar_arvore(){
+	/*caso a árvore esteja vazia*/
+	if(raiz == NULL){
+		printf("\nArvore Vazia!!");
+	/*caso a árvore contenha elementos*/
+	}else{
+		/*aux aponta para o endereço de raiz*/
+	    aux = raiz;
+		/*como aqui utilizaremos uma pilha, incializamos seu topo com null*/
+	    topo = NULL;
+	    do{
+	        while(aux != NULL){
+			Pilha *aux_pilha =(Pilha*) malloc(sizeof(Pilha));
+			/*impressão do elemento apontado por aux*/
+			printf("%d ", aux->num);
+			/*colocamos na pilha o elemento impresso*/
+			aux_pilha->num = aux;
+			aux_pilha->prox = topo;
+			topo = aux_pilha;
+			/*fazemos com que aux aponte para o elemento a sua esquerda*/
+			aux = aux->esq;
+	        }
+	        if(topo != NULL){
+			aux_pilha = topo;
+			 topo = topo->prox;
+			/*aux aponta para o elemento a direita de topo na árvore*/
+			 aux = aux_pilha->num->dir;
+	        }
+	    }while(topo != NULL || aux != NULL);
+	    aux_pilha = topo;
+	   /*passagem por todos os elementos da pilha e removendo cada um deles*/
+	    while(aux_pilha != NULL){
+		topo = topo->prox;
+		free(topo->num);
+		free(aux_pilha);
+		aux_pilha = topo;
+	    }
+	    raiz = NULL;
+	    printf("\nArvore esvaziada");
+	}
+	getch();
+}
+					</pre>
+					<p>O resultado final após essa operação seria esse:</p>
+					<div class="row"><center><img class="img-responsive " src="img/arv/inicio_arvore.PNG" alt="" align="middle"><center></div>
+				</div>
+				<center>
+				<h3>Video Explicativo - Alocação Dinâmica</h3>
+					<p>                                      </p>
+					<video width=80% height="315" class="img-responsive" controls>
+					  <source src="video/alocacao.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				</center>
+				
+				
+			
+			
+					
+			<!-- /.col-lg-4 -->
+			
+			</div>
+				
+		</div>
+	</div>
+	<div id="ex" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Exercícios</h2>
+			</div>
+			<center>
+			<div class="row">
+	
+				<div class="col-sm-4 col-sm-offset-4 wow fadeInDown text-center">
+					<a href="#">
+					  <img class="rotate" src="img/icon/pdf.png" alt="Generic placeholder image">
+					  <h3>Download</h3>
+					  <center><p text-align: center>Dowload lista de exercícios para treinamento de Ponteiros</p></center>
+					</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			
+			
+		</div>
+	</div>
+	
+	
+	
+	<footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">REA-AED</h3>
+            <p>Desenvolvido por Gabriel Bueno da Silva<br/>
+              <br/>
+            </p>
+			
+			<!-- LICENSE -->
+			<p>Utilização do tema:</p>
+			<a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy"
+		   property="dc:title">Flatfy Theme </a> by
+		   <a rel="dc:creator" href="http://www.andreagalanti.it"
+		   property="cc:attributionName">Andrea Galanti</a>
+		   is licensed to the public under 
+		   <BR>the <a rel="license"
+		   href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative
+		   Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
+		   
+	   
+          </div> <!-- /col-xs-7 -->
+
+          <div class="col-md-5">
+            <div class="footer-banner">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
